@@ -1,0 +1,163 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
+		
+		<title>Weather</title>
+
+		
+		<link href="http://fonts.googleapis.com/css?family=Roboto:300,400,700|" rel="stylesheet" type="text/css">
+		<link href="fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/all.min.css" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body id="home" data-bs-spy="scroll" data-bs-target="#navbar-example">
+<div class="content">
+<!-- <div class="content-nav">
+   
+        <nav  id="navbar-example" class="navbar navbar-expand-lg fixed-top navbar-dark nav-scroll ">
+          <div class="container">
+            <a class="brand" href="#">
+              <img src="./logo.png" class="logo">
+                <h1 class="site-title">Weather</h1>
+            </a>
+            <button
+              class="navbar-toggler border-0"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <i class="fa-solid fa-bars nav-icon"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">News</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#Portfolio">Live Cameras </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#client">Photos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disable" aria-disabled="true"  href="#contact">Contact</a>
+                </li>
+              </ul>
+          </div>
+        </div>
+        </nav> 
+    </div>
+    -->
+
+  <div class="image">
+    <div class="container">
+      <div class="location">
+        <input type="text" placeholder="Find your Location... " id="search">
+        <input type="button" value="Find" id="submit">
+      </div>
+    </div>
+  </div>
+
+  <div class="section-table">
+    <div class="container ">
+      <div class="row">
+      <div class="section-container " id="section">
+        <div class="today section col-4">
+          <div class="section-header" id="today">
+            <span id="today_day_name" class="day">friday</span>
+            <span class="date">
+            <span id="today_day_number" >26</span>
+            <span id="today_month" >January</span>
+          </span>
+          </div>
+          <div class="section-content" id="current">
+            <div id="today_location" class="location">Cairo</div>
+            <div class="degree">
+              <span id="today_temp" class="num">19</span>
+              <span> <sup>o</sup>C</span>
+
+              <div class="section-icon">
+                <img id="today_condition_img" src="https://cdn.weatherapi.com/weather/64x64/day/116.png" alt="" width="90">
+              </div>
+
+            </div>
+            <div id="today_condition_text" class="custom">Partly cloudy</div>
+            <span id="humitidy"><i class="fa-thin fa-umbrella" style="color: #8d8e91;"></i>20%</span>
+            <span id="wind"><i class="fa-thin fa-wind" style="color: #898d94;"></i>18km/h</span>
+            <span id="wind_direction">East</span>
+          </div>
+        </div>
+        <div class="section col-4">
+          <div class="section-header">
+              <div class="day">Saturday</div>
+          </div> 
+          <div class="section-content">
+              <div class="section-icon">
+                  <img src="https://cdn.weatherapi.com/weather/64x64/day/116.png" alt="" width="48">
+              </div>
+              <div class="degree">17.9<sup>o</sup>C</div>
+              <small>11.9<sup>o</sup></small>
+              <div class="custom">Partly Cloudy </div>
+          </div>
+          </div>
+          <div class="section col-4">
+            <div class="section col-4-header" id="tomarrow_date">
+                <div class="day">Sunday</div>
+            </div> 
+            <div class="section-content">
+                <div class="section-icon" id="tomorrow">
+                    <img class="next_img" src="https://cdn.weatherapi.com/weather/64x64/day/116.png" alt="" width="48">
+                </div>
+                <div class="degree">18.4<sup>o</sup>C</div>
+                <small class="next_min">11.2<sup>o</sup></small>
+                <div class="custom">Partly Cloudy </div>
+            </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <footer >
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 subscribe-form">
+           
+              <input type="text" placeholder="Enter your email to subscribe...">
+              <input type="submit" value="Subscribe">
+           
+          </div>
+          <div class="col-md-3 col-md-offset-1">
+            <div class="social-links">
+              <a href="#"><i class="fa fa-facebook"></i></a>
+              <a href="#"><i class="fa fa-twitter"></i></a>
+              <a href="#"><i class="fa fa-google-plus"></i></a>
+              <a href="#"><i class="fa fa-pinterest"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <p class="colophon">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+      </div>
+    </footer>
+  </div>
+
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/main.js"></script>
+
+</body>
+
+</html>
